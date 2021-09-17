@@ -1,6 +1,13 @@
-/* CSS Reset */
-@use "./base/normailze";
+/* Abstract */
+@use "./abstracts/variables";
 
-/* Navbar */
-@use "./pages/header"; 
+/* Base */
+@use "./base/reset";
+@use "./base/typography";
+
+/* Components */
+@use "./components/buttons";
+
+/* Layot */
+@use "./layout/header"; 
 

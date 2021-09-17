@@ -368,7 +368,19 @@ a {
   text-decoration: none;
 }
 
-/* CSS Reset */
-/* Navbar */
+*,
+body,
+html {
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  background-color: aqua;
+}
+
+/* Abstract */
+/* Base */
+/* Components */
+/* Layot */
 
 /*# sourceMappingURL=style.css.map */
