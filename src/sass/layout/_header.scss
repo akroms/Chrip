@@ -10,7 +10,6 @@ header {
 
         &-list {
             display: none;
-            
         }
 
         &-link {
@@ -40,6 +39,10 @@ header {
 
         &-toggle {
             margin: 0 1em 0 0;
+            cursor: pointer;
+            &:active {
+                transform: rotate(90deg);
+            }
         }
     }
 }
@@ -62,9 +65,13 @@ header {
 //             margin: 1em 0;
 //         }
 
-//         &-brand,
-//         &-toggle {
+//         &-brand {
 //             display: none;
+//         }
+//         &-toggle {
+//             position: absolute;
+//             top: 2em;
+//             right:0;
 //         }
 //     }
 // }
