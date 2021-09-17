@@ -414,6 +414,10 @@ header .navbar-brand {
 }
 header .navbar-toggle {
   margin: 0 1em 0 0;
+  cursor: pointer;
+}
+header .navbar-toggle:active {
+  transform: rotate(90deg);
 }
 
 /* Toggle */
