@@ -1,18 +1,38 @@
 header {
-    background-color: aqua;
+    background-color: #fbf8f3;
     .navbar {
         .row {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             padding: 2em 0;
         }
 
         &-list {
             display: none;
+            
+        }
+
+        &-link {
+            color: #595959;
+            font-size: 1.1em;
+        }
+
+        .navbar-item--sign {
+            background-color: #1da1f2;
+            padding: 1em 1em;
+            border-radius: 0.5em;
+        }
+
+        .navbar-link--sign {
+            font-weight: 600;
+            color: #fff;
         }
 
         &-brand {
+            color: #3180f5;
             margin-left: 1em;
+            font-size: 1.1em;
             font-style: italic;
             font-weight: 600;
         }
@@ -25,29 +45,28 @@ header {
 
 /* Toggle */
 
-header {
-    background-color: aqua;
-    .navbar {
-        .row {
-            padding: 2em 0;
-            justify-content: center;
-        }
+// header {
+//     .navbar {
+//         .row {
+//             padding: 2em 0;
+//             justify-content: center;
+//         }
 
-        &-list {
-            display: block;
-            text-align: center;
-        }
+//         &-list {
+//             display: block;
+//             text-align: center;
+//         }
 
-        &-item {
-            margin: 1em 0;
-        }
+//         &-item {
+//             margin: 1em 0;
+//         }
 
-        &-brand,
-        &-toggle {
-            display: none;
-        }
-    }
-}
+//         &-brand,
+//         &-toggle {
+//             display: none;
+//         }
+//     }
+// }
 
 @media (min-width: 768px) {
     header {
@@ -59,6 +78,7 @@ header {
                 display: flex;
                 justify-content: space-evenly;
                 width: 50%;
+                align-items: center;
             }
 
             &-brand {
