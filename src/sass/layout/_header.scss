@@ -1,3 +1,75 @@
 header {
     background-color: aqua;
+    .navbar {
+        .row {
+            display: flex;
+            justify-content: space-between;
+            padding: 2em 0;
+        }
+
+        &-list {
+            display: none;
+        }
+
+        &-brand {
+            margin-left: 1em;
+            font-style: italic;
+            font-weight: 600;
+        }
+
+        &-toggle {
+            margin: 0 1em 0 0;
+        }
+    }
+}
+
+/* Toggle */
+
+header {
+    background-color: aqua;
+    .navbar {
+        .row {
+            padding: 2em 0;
+            justify-content: center;
+        }
+
+        &-list {
+            display: block;
+            text-align: center;
+        }
+
+        &-item {
+            margin: 1em 0;
+        }
+
+        &-brand,
+        &-toggle {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        .navbar {
+            .row {
+            }
+
+            &-list {
+                display: flex;
+                justify-content: space-evenly;
+                width: 50%;
+            }
+
+            &-brand {
+                margin-left: 1em;
+                font-style: italic;
+                font-weight: 600;
+            }
+
+            &-toggle {
+                display: none;
+            }
+        }
+    }
 }

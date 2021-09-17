@@ -374,10 +374,65 @@ html {
   font-family: "Inter", sans-serif;
 }
 
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
 header {
   background-color: aqua;
 }
+header .navbar .row {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 0;
+}
+header .navbar-list {
+  display: none;
+}
+header .navbar-brand {
+  margin-left: 1em;
+  font-style: italic;
+  font-weight: 600;
+}
+header .navbar-toggle {
+  margin: 0 1em 0 0;
+}
 
+/* Toggle */
+header {
+  background-color: aqua;
+}
+header .navbar .row {
+  padding: 2em 0;
+  justify-content: center;
+}
+header .navbar-list {
+  display: block;
+  text-align: center;
+}
+header .navbar-item {
+  margin: 1em 0;
+}
+header .navbar-brand, header .navbar-toggle {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  header .navbar-list {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+  }
+  header .navbar-brand {
+    margin-left: 1em;
+    font-style: italic;
+    font-weight: 600;
+  }
+  header .navbar-toggle {
+    display: none;
+  }
+}
 /* Abstract */
 /* Base */
 /* Components */
