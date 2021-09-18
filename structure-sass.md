@@ -36,3 +36,7 @@ sass/
 |   |– _jquery-ui.scss    // jQuery UI
 |
 `– main.scss              // Main Sass file
+
+
+/* To compile */
+sass main.scss ../css/style.css --watch
