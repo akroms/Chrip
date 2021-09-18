@@ -27,6 +27,7 @@ header {
         &-toggle {
             margin: 0 1em 0 0;
             cursor: pointer;
+            
             &:active {
                 transform: rotate(90deg);
             }
@@ -38,32 +39,48 @@ header {
         margin: 1em 0 0 0;
         &-row {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            flex-direction: column-reverse;
         }
         &-left {
-          
         }
-        &-right {
-            max-width: 45%;
+        &-title {
+            font-size: 2em;
+            font-weight: bold;
+            margin: 1em 0 0.5em 0;
+        }
+        &-info {
+            margin: 1em 0;
+            line-height: 1.6em;
+            color: #737373;
+        }
+        .learn-more {
+            margin: 0.4em 0 0.5em 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &--btn {
+                color: #1f7898;
+                font-weight: bold;
+            }
+        }
+        &-sign-up {
+            display: block;
         }
     }
-
-
 }
 
-/* Toggle */
+// /* Toggle */
 
 // header {
 //     .navbar {
-//         .row {
+//         .nav-row {
 //             padding: 2em 0;
 //             justify-content: center;
 //         }
 
 //         &-list {
-//             display: block;
-//             text-align: center;
+//            display: block;
+//            margin-left: auto;
 //         }
 
 //         &-item {
@@ -74,14 +91,37 @@ header {
 //             display: none;
 //         }
 //         &-toggle {
-//             position: absolute;
-//             top: 2em;
-//             right:0;
+//             align-self: flex-start;
+            
+//             margin-left: auto;
 //         }
 //     }
 // }
 
+@media (min-width: 576) {
+    header {
+        /* Showcase */
+        .showcase {
+            margin: 1em 0 0 0;
+            &-row {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            &-left {
+            }
+            &-right {
+                max-width: 45%;
+            }
+        }
+    }
+}
+
 @media (min-width: 992px) {
+    .container {
+        width: 1200px;
+        margin: 0 auto;
+    }
     header {
         .navbar {
             &-list {
