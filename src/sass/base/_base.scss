@@ -1,16 +1,10 @@
-
+* {
+    box-sizing: border-box;
+}
 
 .container {
     max-width: 90%;
     margin: 0 auto;
-}
-
-@media (min-width:992px) {
-    .container {
-        max-width: 80%;
-        width: 1200px;
-        margin: 0 auto;
-    }
 }
 
 img {
