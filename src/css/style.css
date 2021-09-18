@@ -374,18 +374,15 @@ html {
   font-family: "Inter", sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .container {
   max-width: 90%;
   margin: 0 auto;
 }
 
-@media (min-width: 992px) {
-  .container {
-    max-width: 80%;
-    width: 1200px;
-    margin: 0 auto;
-  }
-}
 img {
   max-width: 100%;
 }
@@ -402,6 +399,7 @@ img {
   padding: 1em 1em;
   border-radius: 0.5em;
   display: inline-block;
+  text-align: center;
 }
 
 .sign-link {
@@ -444,15 +442,54 @@ header .showcase {
 }
 header .showcase-row {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column-reverse;
 }
-header .showcase-right {
-  max-width: 45%;
+header .showcase-title {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 1em 0 0.5em 0;
+}
+header .showcase-info {
+  margin: 1em 0;
+  line-height: 1.6em;
+  color: #737373;
+}
+header .showcase .learn-more {
+  margin: 0.4em 0 0.5em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .showcase .learn-more--btn {
+  color: #1f7898;
+  font-weight: bold;
+}
+header .showcase-sign-up {
+  display: block;
 }
 
-/* Toggle */
+@media (min-width: 576) {
+  header {
+    /* Showcase */
+  }
+  header .showcase {
+    margin: 1em 0 0 0;
+  }
+  header .showcase-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .showcase-right {
+    max-width: 45%;
+  }
+}
 @media (min-width: 992px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
   header .navbar-list {
     display: flex;
     justify-content: space-between;
