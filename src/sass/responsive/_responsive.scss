@@ -29,6 +29,7 @@
 }
 
 @media (min-width: 768px) {
+    /* Header */
     header {
         .showcase {
             &-row {
@@ -44,6 +45,21 @@
             &-avatars {
                 margin: 1.5em 0;
             }
+        }
+    }
+
+    /* Features */
+    .features {
+        &-title {
+            font-size: 2.1em;
+            font-weight: 600;
+            margin: 2em 0;
+            max-width: 50%;
+        }
+        &-cards {
+            grid-template-columns: 1fr 1fr;
+            gap: 0 2em;
+            margin: 0 0 3em 0;
         }
     }
 }
