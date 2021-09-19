@@ -1,3 +1,5 @@
+@import "../abstracts/variables"; 
+
 header {
     background-color: #fbf8f3;
     /* Navbar */
@@ -11,7 +13,7 @@ header {
         }
 
         &-link {
-            color: #595959;
+            color: $dark-gray;
             font-size: 1.1em;
         }
 
@@ -50,7 +52,7 @@ header {
         &-info {
             margin: 1em 0;
             line-height: 1.6em;
-            color: #737373;
+            color: $light-gray;
         }
         &-btns {
             flex-direction: column;
@@ -79,7 +81,7 @@ header {
         }
         &-join {
             max-width: 30em;
-            color: #737373;
+            color: $light-gray;
             &--span {
                 color: #1f7898;
                 font-weight: bold;
