@@ -1,9 +1,29 @@
+@import "../abstracts/variables"; 
+
 /* Features */
 .features {
     &-title {
         font-size: 2.1em;
         font-weight: 600;
         margin: 2em 0 0.7em 0;
+    }
+    &-cards {
+        display: grid;
+    }
+    &-card {
+        border: 1px solid $lightest-gray;
+        border-radius: 3px;
+        padding: 1em;
+        margin: 1em 0;
+        &__title {
+            margin: 1em 0;
+            font-weight: 600;
+        }
+        &__subtitle {
+            color: $light-gray;
+            line-height: 1.6em;
+        }
+        
     }
 }
 
