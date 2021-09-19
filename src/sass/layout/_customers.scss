@@ -1,0 +1,53 @@
+/* Variables */
+@import "../abstracts/variables";
+
+/* Custumers */ 
+.customers {
+    background-color: $light-blue;
+    &-title {
+        font-size: 2em;
+        font-weight: 600;
+        padding: 1em 0;
+    }
+    &-cards {
+        padding: 1em 0;
+    }
+    &-card {
+        margin: 0 0 1em 0;
+        background-color: #fff;
+        padding: 1em;
+        border-radius: 5px;
+        &__user {
+            &--name {
+                padding: 0.3em 0;
+            }
+            &--url {
+                color:$light-gray
+            }
+            margin-left: 0.5em;
+        }
+        &__profile,
+        &__interact {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__interact {
+            margin: 1em 0 0.5em 0;
+        }
+        &__image {
+            width: 100%;
+            text-align: end;
+        }
+        &__subtitle {
+            margin: 1em 0;
+            color:$light-gray;
+            font-size: 1.1em;
+            line-height: 1.5em;
+        }
+        .date {
+            color:$light-gray;
+        }
+    }
+}
+
