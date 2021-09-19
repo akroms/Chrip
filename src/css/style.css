@@ -514,6 +514,13 @@ header .showcase-join--span {
   font-weight: bold;
 }
 
+/* Features */
+.features-title {
+  font-size: 2.1em;
+  font-weight: 600;
+  margin: 2em 0 0.7em 0;
+}
+
 @media (min-width: 576px) {
   header {
     /* Showcase */
@@ -591,5 +598,6 @@ header .showcase-join--span {
 /* Base */
 /* Components */
 /* Layot */
+/* Responsive */
 
 /*# sourceMappingURL=style.css.map */

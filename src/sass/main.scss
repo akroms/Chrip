@@ -10,5 +10,8 @@
 @use "./components/buttons";
 
 /* Layot */
-@use "./layout/header"; 
+@use "./layout/header";
+@use "./layout/features";
 
+/* Responsive */
+@use "./responsive/responsive";
