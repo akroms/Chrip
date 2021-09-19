@@ -62,6 +62,18 @@
             margin: 0 0 3em 0;
         }
     }
+
+    /* Customers */
+    .customers {
+        &-card {
+            margin: 0 0 3em 0;
+            &-container {
+                display: grid;
+                grid-auto-flow: column;
+                gap: 1em;
+            }
+        }
+    }
 }
 
 @media (min-width: 992px) {
@@ -69,6 +81,8 @@
         width: 1200px;
         margin: 0 auto;
     }
+
+    /* Header */
     header {
         .navbar {
             &-list {
