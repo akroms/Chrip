@@ -617,6 +617,7 @@ header .showcase-join--span {
   text-align: center;
 }
 .price-card {
+  background-color: #fbf8f3;
   border: 1px solid #ffad23;
   border-radius: 5px;
   padding: 0.8em;
