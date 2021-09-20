@@ -591,6 +591,80 @@ header .showcase-join--span {
   color: #737373;
 }
 
+/* Variables */
+/* Colors */
+/* Price Section */
+.price-intro {
+  max-width: 460px;
+  margin: 0 auto;
+}
+.price-sign-up {
+  display: block;
+  width: 95%;
+  margin: 1em auto;
+}
+.price-title {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 600;
+  padding: 1em 0 0 0;
+}
+.price-subtitle {
+  color: #737373;
+}
+.price-title, .price-subtitle {
+  margin: 0.7em 0;
+  text-align: center;
+}
+.price-card {
+  border: 1px solid #ffad23;
+  border-radius: 5px;
+  padding: 0.8em;
+  max-width: 420px;
+  margin: 3em auto;
+  /* Offers */
+}
+.price-card__subtitle {
+  width: 95%;
+  margin: 1em auto;
+  color: #737373;
+  font-size: 1.1em;
+}
+.price-card__title {
+  width: 95%;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 2em;
+}
+.price-card__title-span {
+  font-size: 0.6em;
+  color: #737373;
+  font-weight: 400;
+}
+@media (max-width: 500px) {
+  .price-card__offers--title {
+    margin-left: 0.7em;
+  }
+}
+@media (min-width: 450px) {
+  .price-card__offers--title {
+    margin-left: -1em;
+  }
+}
+.price-card__offer {
+  margin: 1em 0;
+  display: grid;
+  grid-auto-flow: column;
+}
+.price-card .offers-cards {
+  width: 95%;
+  margin: 1em auto;
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+  color: #737373;
+  padding: 0.7em 0;
+}
+
 @media (min-width: 576px) {
   header {
     /* Showcase */
