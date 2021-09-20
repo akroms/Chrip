@@ -10,7 +10,8 @@
 @use "./layout/header";
 @use "./layout/features";
 @use "./layout/customers";
-@use "./layout/price"; 
+@use "./layout/price";
+@use "./layout/footer";  
 
 /* Responsive */
 @use "./responsive/responsive";
