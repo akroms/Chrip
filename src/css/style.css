@@ -666,6 +666,25 @@ header .showcase-join--span {
   padding: 0.7em 0;
 }
 
+/* Variables */
+/* Colors */
+/* Footer */
+.footer {
+  background-color: #d7f5f5;
+  padding: 1em 0;
+}
+.footer-brand {
+  cursor: pointer;
+  color: #3180f5;
+  font-weight: 600;
+  font-style: italic;
+  margin: 1em 0;
+}
+.footer-link {
+  color: #1b1f1f;
+  font-weight: 500;
+}
+
 @media (min-width: 576px) {
   header {
     /* Showcase */
@@ -693,6 +712,17 @@ header .showcase-join--span {
   }
   header .showcase-join {
     margin: 1em 0;
+  }
+
+  /* Footer */
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-links {
+    display: grid;
+    grid-auto-flow: column;
   }
 }
 @media (min-width: 768px) {
