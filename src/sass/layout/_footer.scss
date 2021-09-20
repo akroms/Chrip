@@ -1,0 +1,21 @@
+/* Variables */
+@import "../abstracts/variables"; 
+
+/* Footer */
+.footer {
+    
+    background-color: $light-blue;
+    padding: 1em 0;
+    &-brand {
+        cursor: pointer;
+        color: #3180f5;
+        font-weight: 600;
+        font-style: italic;
+        margin: 1em 0;
+    }
+    &-link {
+        // margin: 0 1em;
+        color: #1b1f1f;
+        font-weight: 500;
+    }
+}
